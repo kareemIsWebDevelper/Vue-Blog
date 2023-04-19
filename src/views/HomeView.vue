@@ -25,11 +25,14 @@ onMounted(() => {
 
 <template>
   <div class="card-image">
-    <img src="../assets/unnamed.png" />
+    <img src="../assets/unnamed.png" alt="img"/>
+    <br />
+    <br />
   </div>
   <div>
     <div v-for="post in posts" key="post.id">
       <PostCard :post="post" />
+      <br />
     </div>
   </div>
 

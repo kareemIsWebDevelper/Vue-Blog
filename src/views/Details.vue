@@ -27,7 +27,8 @@ onMounted(() => {
 })
 </script>
 <template>
-  <div class="row justify-content-center">
+  <div>
+    <br><br><br><br>
     <DetaitCard :post="state.post" />
   </div>
 
@@ -36,3 +37,11 @@ onMounted(() => {
       <Footer />
   </footer>
 </template>
+
+<style scoped>
+  footer {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+</style>
